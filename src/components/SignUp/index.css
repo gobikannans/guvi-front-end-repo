@@ -1,0 +1,10 @@
+.signup-form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: white;
+    height: 70%;
+    border-radius: 20px;
+}

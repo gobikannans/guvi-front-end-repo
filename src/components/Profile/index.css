@@ -1,0 +1,50 @@
+.profilebg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    height: 100vh;
+}
+
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    width: 80%;
+    height: 80vh;
+
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.info{
+    height: 5vh;
+    width: 50%;
+    font-size: 15px;
+}
+
+.logoutbtn{
+    background-color: green;
+    border:0px;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-right: 50px;
+    margin-top: 20px;
+    
+}

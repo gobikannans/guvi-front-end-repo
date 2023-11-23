@@ -1,6 +1,8 @@
 import React,{useState,useEffect} from "react";
 import "./index.css"
 
+const baseurl="https://guvi-auth-qf1t.onrender.com"
+
 export default function Profile(){
     const strval=window.localStorage.getItem("userDetails")
     const strparse=JSON.parse(strval)
@@ -13,7 +15,7 @@ export default function Profile(){
 
 
     useEffect(()=>{
-        fetch("http://localhost:5000/userData",{
+        fetch(`${baseurl}/userData`,{
             method:"POST",
             crossDomain:true,
             headers:{

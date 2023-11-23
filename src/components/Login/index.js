@@ -1,6 +1,8 @@
 import React,{useState} from "react";
 import {Link} from "react-router-dom"
 import "./index.css"
+const baseurl="https://guvi-auth-qf1t.onrender.com"
+
 
 export default function Login(){
    const [email,setEmail]=useState("")
@@ -55,7 +57,7 @@ export default function Login(){
     const submitForm=(e)=>{
         e.preventDefault();
         console.log(email,password)
-        fetch("http://localhost:5000/login-user",{
+        fetch(`${baseurl}/login-user`,{
             method:"POST",
             crossDomain:true,
             headers:{
